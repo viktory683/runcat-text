@@ -170,6 +170,7 @@ With states like that your module will gets classes like
 # todo
 
 - [ ] test with other bars
+- [ ] check font for line-height or something
 - [ ] refactor
 
 # resources
