@@ -169,6 +169,7 @@ With states like that your module will gets classes like
 
 # todo
 
+- [ ] [MORE CATS!!!](https://kyome.io/runcat/index.html?lang=en)
 - [ ] test with other bars
 - [ ] check font for line-height or something
 - [ ] refactor
