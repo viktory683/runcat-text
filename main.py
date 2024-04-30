@@ -85,9 +85,7 @@ class CPU:
                                 lambda line: line.startswith("cpu"),
                                 lines,
                             )
-                        )[
-                            -1
-                        ].split()[0][-1]
+                        )[-1].split()[0][-1]
                     )
                     + 1
                 )
@@ -173,7 +171,8 @@ if ui.fps_h < ui.fps_l:
 
 ###
 
-loop = asyncio.get_event_loop()
+loop = asyncio.new_event_loop()
+asyncio.set_event_loop(loop)
 task_cpu = loop.create_task(cpu.update())
 task_ui = loop.create_task(ui.update())
 loop.run_until_complete(asyncio.gather(task_cpu, task_ui))
